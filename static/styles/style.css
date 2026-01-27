@@ -1,0 +1,402 @@
+
+/* memories */
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Unbounded', cursive, sans-serif !important;
+    font-weight: 400; 
+}
+.nav-link {
+    color: #dcddff  !important;
+}
+
+
+.nav-link.active {
+    color: #ccffc1 !important;
+    font-weight: bold;
+
+}
+
+.navbar-light .navbar-brand {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 1000 !important;
+}
+
+
+.container-fluid {
+    height: 7 0px;
+     background: linear-gradient(
+        135deg,
+        #8A2BE2 0%,    /* Сине-фиолетовый */
+        #9370DB 25%,   /* Средний фиолетовый */
+        #DA70D6 50%,   /* Орхидея */
+        #FF69B4 75%,   /* Ярко-розовый */
+        #FF1493 100%   /* Глубокий розовый */
+    );
+    background-size: 400% 400%;
+    animation: gentleGradient 20s ease infinite;
+}
+
+@keyframes gentleGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.year {
+    display: flex;
+    justify-content: center;
+    background-color: #dcddff;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    
+}
+
+.year> h1 {
+font-size: 130px;
+color: #472f76;
+
+
+
+}
+.container-fluid>a>img {
+    height: 40px;
+}
+
+
+
+.container-mem {
+    background-color: #dcddff;
+}
+
+.card {
+    justify-content: center;
+    border-radius: 3rem !important; 
+}
+
+
+/* me */
+
+.funny {
+    display: flex;
+    justify-content: center; /* По горизонтали */
+    align-items: center; /* По вертикали */
+    height: 400px;
+    flex-wrap: wrap;
+    gap: 1em;
+    
+}
+
+.funny>img {
+    height: 400px;
+}
+
+
+
+.memories-section {
+    background-color: #ccffc1;
+}
+
+
+/* Стили для секции */
+.memories-section {
+    background:  rgb(174, 219, 186);
+}
+
+.section-header {
+    position: relative;
+}
+
+.section-label {
+    display: inline-block;
+    padding: 5px 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 20px;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-title {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 700;
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border: none;
+}
+
+.section-description {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Контейнер для карусели */
+.carousel-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Карусель */
+.carousel {
+    border-radius: 15px;
+}
+
+.carousel-inner {
+    border-radius: 15px;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Подписи в карусели */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 15px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 500px;
+}
+
+.carousel-caption h5 {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* Индикаторы */
+.carousel-indicators {
+    bottom: 10px;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid transparent;
+}
+
+.carousel-indicators button.active {
+    background-color: #764ba2;
+    border-color: white;
+}
+
+/* Кнопки навигации */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background: rgba(118, 75, 162, 0.8);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 20px;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .carousel-container {
+        margin: 0 15px;
+    }
+    
+    .carousel-item img {
+        height: 400px;
+    }
+    
+    .carousel-caption {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+    }
+}
+
+
+
+/* footer */
+.container-mem1 {
+    background-color: #d2c2f1;
+}
+
+.violet {
+    color: #3c3649;
+}
+
+/* Стили для футера */
+.site-footer {
+  background: linear-gradient(135deg, #2c3e50 0%, #1a1a2e 100%);
+  color: #fff;
+  padding: 60px 0 30px;
+  margin-top: 80px;
+  font-family: 'Unbounded', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-brand h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer-brand p {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.footer-social h4,
+.footer-contacts h4 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Иконки соцсетей */
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(113, 7, 7, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.social-icon:hover::before {
+  left: 100%;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+  background: rgba(105, 55, 55, 0.2);
+}
+
+/* Цвета при наведении для каждой соцсети */
+.social-icon:nth-child(1):hover { background: #0088cc; } /* Telegram */
+.social-icon:nth-child(2):hover { background: #E4405F; } /* Instagram */
+.social-icon:nth-child(3):hover { background: #333; } /* GitHub */
+.social-icon:nth-child(4):hover { background: #FF0000; } /* YouTube */
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.footer-contacts p {
+  margin: 8px 0;
+  color: #6c5975;
+  font-size: 0.95rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-bottom p {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.footer-love {
+  color: #ff6b6b !important;
+  font-weight: 500;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
