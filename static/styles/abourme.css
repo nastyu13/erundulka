@@ -5,6 +5,7 @@ section {
 
 .container-me {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     min-height: 500px;
@@ -13,63 +14,51 @@ section {
 }
 
 
-.image-me {
-    position: relative;
-    width: 300px; 
-    height: 300px; 
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    cursor: pointer;
+
+.image-hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+  
 }
 
-
-.expand-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-
-.image-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.9) 0%,
-        rgba(0, 0, 0, 0.7) 50%,
-        transparent 100%
-    );
-    color: white;
-    padding: 30px 20px 20px;
-    transform: translateY(100%);
-    opacity: 0;
+.title-image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
     transition: all 0.5s ease;
+    
+}
+/* .image-hover:hover {
+  width: 500px; 
+  height: 500px;
+} */
+
+.title-me {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 4rem;
+    color: #000000;
+}
+
+.title-me span {
+    opacity: 0;
+    transition: opasity 0.2s, font-size 1s 0.2s;
+}
+
+.image-hover:hover {
+    width: 700px;
+    padding: 0 ;
 }
 
 
-
-.image-overlay{
-    background: white;
-    padding: 0 20px;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.4s ease;
+.title-me span:hover {
+    opacity: 1;
+    font-size: 100px;
 }
-
-
-.image-me:hover {
-    height: 400px; }
-
-.image-me:hover .hidden-text {
-    max-height: 200px;
-    padding: 20px;
-}
-
-
-
-
